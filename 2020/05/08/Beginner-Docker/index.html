@@ -15,7 +15,7 @@
 <meta property="og:description" content="Chào các bạn hôm nay mình sẽ giới thiệu về Docker, một trong những công cụ tuyệt vời, cần thiết cho developer và sysadmin. 1.1 Docker là gì ? Docker dễ hiểu thì như một máy ảo nhưng ở tầng ứng dụng k">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-08T06:44:41.000Z">
-<meta property="article:modified_time" content="2020-05-12T09:34:11.316Z">
+<meta property="article:modified_time" content="2020-05-12T09:39:21.457Z">
 <meta property="article:author" content="VietHebis">
 <meta name="twitter:card" content="summary">
   
@@ -89,13 +89,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p> Chào các bạn hôm nay mình sẽ giới thiệu về Docker, một trong những công cụ tuyệt vời, cần thiết cho developer và sysadmin.</p>
-<h2 id="1-1-Docker-la-gi"><a href="#1-1-Docker-la-gi" class="headerlink" title="1.1 Docker là gì ?"></a>1.1 Docker là gì ?</h2><ul>
+<h3 id="1-1-Docker-la-gi"><a href="#1-1-Docker-la-gi" class="headerlink" title="1.1 Docker là gì ?"></a>1.1 Docker là gì ?</h3><ul>
 <li><p>Docker dễ hiểu thì như một máy ảo nhưng ở tầng ứng dụng không như VMWare hay VirtualBox ảo hóa ở machine.</p>
 </li>
 <li><p>Chúng ta có thể tự triển khai ở máy cá nhân, server hoặc cloud.</p>
 </li>
 <li><p>More info: <a href="https://www.docker.com/why-docker" target="_blank" rel="noopener">Docker page</a></p>
-<h2 id="1-2-Chuc-nang-vai-tro-cua-Docker"><a href="#1-2-Chuc-nang-vai-tro-cua-Docker" class="headerlink" title="1.2 Chức năng, vai trò của Docker :"></a>1.2 Chức năng, vai trò của Docker :</h2></li>
+<h3 id="1-2-Chuc-nang-vai-tro-cua-Docker"><a href="#1-2-Chuc-nang-vai-tro-cua-Docker" class="headerlink" title="1.2 Chức năng, vai trò của Docker :"></a>1.2 Chức năng, vai trò của Docker :</h3></li>
 <li><p>Cho phép phát triển, di chuyển và chạy các ứng dụng dựa vào công nghệ ảo hóa container trong Linux.</p>
 </li>
 <li><p>Tự động triển khai các ứng dụng bên trong các container bằng cách cung cấp thêm một lớp trừu tượng và tự động hóa việc ảo hóa “mức hệ điều hành”.</p>
@@ -109,14 +109,14 @@
 <li>Lightweight (tiết kiệm disk &amp; CPU)</li>
 <li>Mã nguồn mở</li>
 <li>Hỗ trợ APIs để giao tiếp với container</li>
-<li>Phù hợp trong môi trường làm việc đòi hòi phải liên tục tích hợp và triển khai các dịch vụ, phát triển cục bộ, các ứng dụng multi-tier.<h2 id="1-3-Cac-khai-niem-can-biet-khi-su-dung-Docker"><a href="#1-3-Cac-khai-niem-can-biet-khi-su-dung-Docker" class="headerlink" title="1.3 Các khái niệm cần biết khi sử dụng Docker :"></a>1.3 Các khái niệm cần biết khi sử dụng Docker :</h2></li>
+<li>Phù hợp trong môi trường làm việc đòi hòi phải liên tục tích hợp và triển khai các dịch vụ, phát triển cục bộ, các ứng dụng multi-tier.<h3 id="1-3-Cac-khai-niem-can-biet-khi-su-dung-Docker"><a href="#1-3-Cac-khai-niem-can-biet-khi-su-dung-Docker" class="headerlink" title="1.3 Các khái niệm cần biết khi sử dụng Docker :"></a>1.3 Các khái niệm cần biết khi sử dụng Docker :</h3></li>
 </ul>
-<h3 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h3><ul>
+<h4 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h4><ul>
 <li>Image trong Docker còn gọi là Mirro. Nó được hiểu như một template dùng để tạo ra container.</li>
 <li>Được xây dựng từ một loạt các layers. Mỗi layer là một kết quả đại diện cho một lệnh trong Dockerfile.</li>
 <li>Lưu trữ dưới dạng read-only template.</li>
 </ul>
-<h3 id="Registry"><a href="#Registry" class="headerlink" title="Registry"></a>Registry</h3><ul>
+<h4 id="Registry"><a href="#Registry" class="headerlink" title="Registry"></a>Registry</h4><ul>
 <li>Docker Registry là nơi lưu trữ các image với hai chế độ là private và public.</li>
 <li>Là nơi cho phép chia sẻ các image template để sử dụng trong quá trình làm việc với Docker.</li>
 <li>Registry phổ biến nhất : <a href="https://hub.docker.com/" target="_blank" rel="noopener">DOcker Hub</a></li>
