@@ -95,56 +95,11 @@
         <p>Nếu bạn là một nhân viên liên quan đến IT ít nhiều sẽ nghe qua từ Bootstrap. Vậy thật sự nó là gì hôm nay mình sẽ giới thiệu cho các bạn làm quan và bước cài đặt.<br>    ## 1. Bootstrap là gì ?<br>    - Bootstrap là một thư viện JS , CSS giúp cho việc phát triển giao diện một cách nhanh chóng và dễ dàng<br>    - Điểm mạnh của bootstrap là reponsive gird system, nghĩa là trang web của bạn sẽ đảm bào hiển thị tốt trên đủ kích cỡ màn hình từ bé như smartphone vài inch đến TV vài chục inch.<br>    - Có thể sử dụng bootstrap nhanh chóng bằng CDN của Google, Bootstraps, v.vvv hoặc chúng ta có thể tải source về để trên website của mình thôm qua npm, gem, hoặc tải từ Github về.<br>    - More info: <a href="https://getbootstrap.com/" target="_blank" rel="noopener">Bootstrap</a></p>
 <pre><code>## 2. Cách cài đặt Bootstrap:
    ### 2.1 Sử dụng CDN:
-   - Các bạn tạo file test.html vào root folder :
+   - Các bạn tạo file test.html vào root folder 
 
-   {% codeblock %}
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-      <meta charset="utf-8">
-      <meta name="generator" content="Hexo 4.2.0"></head>
-      </html>
-       {% endcodeblock %}
+   - Các bạn lưu ý khi sử dụng thì CDN phải nằm trong tag head của html:</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;title&gt;Bootstrap 4 Example&lt;&#x2F;title&gt;</span><br><span class="line">  &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br><span class="line">  &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1&quot;&gt;</span><br><span class="line">  &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;maxcdn.bootstrapcdn.com&#x2F;bootstrap&#x2F;4.4.1&#x2F;css&#x2F;bootstrap.min.css&quot;&gt;</span><br><span class="line">  &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;ajax.googleapis.com&#x2F;ajax&#x2F;libs&#x2F;jquery&#x2F;3.5.1&#x2F;jquery.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;popper.js&#x2F;1.16.0&#x2F;umd&#x2F;popper.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">  &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;maxcdn.bootstrapcdn.com&#x2F;bootstrap&#x2F;4.4.1&#x2F;js&#x2F;bootstrap.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class&#x3D;&quot;container&quot;&gt;</span><br><span class="line">  &lt;h1&gt;My First Bootstrap Page&lt;&#x2F;h1&gt;</span><br><span class="line">  &lt;p&gt;This is some text.&lt;&#x2F;p&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 
-   - Các bạn lưu ý khi sử dụng thì CDN phải nằm trong tag head của html:
-
-      {% codeblock CDN %}
-<head>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
-          {% endcodeblock %}
-
-  - Kiểm tra xe đã cài đặt thành công hay chưa:
-  {% codeblock %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap 4 Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="container">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p>
-</div>
-
-</body>
-</html>
-      {% endcodeblock %}
-  - Mở trình duyệt lên và kiểm tra kết quả :</code></pre>
+<pre><code>- Kiểm tra xe đã cài đặt thành công hay chưa:</code></pre>
       
     </div>
     <footer class="article-footer">
