@@ -20,10 +20,10 @@
     <link rel="alternate" href="/atom.xml" title="Tech Blogs" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.png">
   
   
-    <link href="/fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   
 <link rel="stylesheet" href="/css/style.css">
@@ -58,7 +58,7 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="/google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://viethebis.github.io"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://viethebis.github.io"></form>
       </div>
     </div>
   </div>
@@ -155,12 +155,11 @@
       
         <p> Chào các bạn hôm nay mình sẽ giới thiệu về Docker, một trong những công cụ tuyệt vời, cần thiết cho developer và sysadmin.</p>
 <h3 id="1-Docker-la-gi"><a href="#1-Docker-la-gi" class="headerlink" title="1 Docker là gì ?"></a>1 Docker là gì ?</h3><ul>
-<li><p>Docker dễ hiểu thì như một máy ảo nhưng ở tầng ứng dụng không như VMWare hay VirtualBox ảo hóa ở machine.</p>
-</li>
-<li><p>Chúng ta có thể tự triển khai ở máy cá nhân, server hoặc cloud.</p>
-</li>
-<li><p>More info: <a href="https://www.docker.com/why-docker" target="_blank" rel="noopener">Docker page</a></p>
-<h3 id="2-Chuc-nang-vai-tro-cua-Docker"><a href="#2-Chuc-nang-vai-tro-cua-Docker" class="headerlink" title="2 Chức năng, vai trò của Docker :"></a>2 Chức năng, vai trò của Docker :</h3></li>
+<li>Docker dễ hiểu thì như một máy ảo nhưng ở tầng ứng dụng không như VMWare hay VirtualBox ảo hóa ở machine.</li>
+<li>Chúng ta có thể tự triển khai ở máy cá nhân, server hoặc cloud.</li>
+<li>More info: <a href="https://www.docker.com/why-docker" target="_blank" rel="noopener">Docker page</a></li>
+</ul>
+<h3 id="2-Chuc-nang-vai-tro-cua-Docker"><a href="#2-Chuc-nang-vai-tro-cua-Docker" class="headerlink" title="2 Chức năng, vai trò của Docker :"></a>2 Chức năng, vai trò của Docker :</h3><ul>
 <li><p>Cho phép phát triển, di chuyển và chạy các ứng dụng dựa vào công nghệ ảo hóa container trong Linux.</p>
 </li>
 <li><p>Tự động triển khai các ứng dụng bên trong các container bằng cách cung cấp thêm một lớp trừu tượng và tự động hóa việc ảo hóa “mức hệ điều hành”.</p>
@@ -168,15 +167,12 @@
 <li><p>Docker có thể sử dụng được trên cả 3 hệ điều hành phổ biến: Windows, Linux và Mac OS.</p>
 </li>
 <li><p>Lợi ích của Docker:</p>
-<ul>
-<li>Nhanh trong việc triển khai, di chuyển, khởi động container</li>
-<li>Bảo mật</li>
-<li>Lightweight (tiết kiệm disk &amp; CPU)</li>
-<li>Mã nguồn mở</li>
-<li>Hỗ trợ APIs để giao tiếp với container</li>
-<li>Phù hợp trong môi trường làm việc đòi hòi phải liên tục tích hợp và triển khai các dịch vụ, phát triển cục bộ, các ứng dụng multi-tier.<h3 id="3-Cac-khai-niem-can-biet-khi-su-dung-Docker"><a href="#3-Cac-khai-niem-can-biet-khi-su-dung-Docker" class="headerlink" title="3 Các khái niệm cần biết khi sử dụng Docker :"></a>3 Các khái niệm cần biết khi sử dụng Docker :</h3></li>
-</ul>
-<h4 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h4><ul>
+<pre><code>+ Nhanh trong việc triển khai, di chuyển, khởi động container
++ Bảo mật
++ Lightweight (tiết kiệm disk &amp; CPU)
++ Mã nguồn mở
++ Hỗ trợ APIs để giao tiếp với container
++ Phù hợp trong môi trường làm việc đòi hòi phải liên tục tích hợp và triển khai các dịch vụ, phát triển cục bộ, các ứng dụng multi-tier.</code></pre><h3 id="3-Cac-khai-niem-can-biet-khi-su-dung-Docker"><a href="#3-Cac-khai-niem-can-biet-khi-su-dung-Docker" class="headerlink" title="3 Các khái niệm cần biết khi sử dụng Docker :"></a>3 Các khái niệm cần biết khi sử dụng Docker :</h3><h4 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h4><ul>
 <li>Image trong Docker còn gọi là Mirro. Nó được hiểu như một template dùng để tạo ra container.</li>
 <li>Được xây dựng từ một loạt các layers. Mỗi layer là một kết quả đại diện cho một lệnh trong Dockerfile.</li>
 <li>Lưu trữ dưới dạng read-only template.</li>
